@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Piazzolla:ital,opsz,wght@0,8..30,100;1,8..30,100&family=Poppins:ital,wght@0,100;0,200;0,400;0,500;1,200;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Piazzolla', serif;
+}
+
+body {
+    background-image: url('../image/bg2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.logo {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.logo img{
+    width: 100px;
+    height: auto;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    background-color: #DDD;
+    border-radius: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+nav a {
+    display: block;
+    text-decoration: none;
+    padding: 10px 25px;
+    color: #000;
+    font-weight: bold;
+    font-family: 'Piazzolla', serif;
+    transition: all ease .2s;
+}
+
+nav a:hover {
+    background-color: #DDD;
+    border-radius: 30px;
+    transform: scale(1.1, 1.1);
+}
+
+nav li {
+    list-style: none;
+    font-size: 30px;
+}
+
+.galery-container {
+    width: 100%;
+    /* padding: 50px 0; */
+    /* height: 100%; */
+}
+
+.filho {
+    width: 100%;
+    max-width: 1600px;
+
+    /* margin: auto; */
+    /* padding: 20px 20px; */
+}
+
+.galery-container h1 {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 4vw;
+    padding-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFF;
+}
+
+.galery-container .neto a {
+    padding: 10px;
+}
+
+.galery-container .neto {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+}
+
+.galery-container .neto video {
+    margin: 10px;
+}
+
+.galery-container .image {
+    flex: 25%;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.galery-container .image img {
+    width: 100%;
+    height: 100%;
+    transition: 0.4s;
+    border-radius: 10px;
+}
+
+.galery-container .image:hover img{
+    transform: scale(1.5);
+}
+
+.motivo {
+    margin-top: 50px;
+}
+
+.video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+video {
+    border: 2px dashed #FFF;
+    padding: 5px;
+    width: 140px;
+    height: auto;
+}
+
+footer {
+    display: flex;
+    width: 100%;
+    height: 30px;
+    background-color: rgb(94, 93, 93);
+    color: #DDD;
+    font-size: 12px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1200px)  {
+    .galery-container .image {
+        flex: 33.33%;
+    }
+}
+
+@media screen and (max-width: 768px)  {
+    nav li {
+        font-size: 18px;
+    }
+    .galery-container .image {
+        flex: 50%;
+    }
+    
+    .galery-container h1 {
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 480px)  {
+    .galery-container .image {
+        flex: 100%;
+    }
+}
